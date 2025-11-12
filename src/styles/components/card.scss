@@ -37,8 +37,42 @@
 }
 
 .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    h3 {
+        font-size: var(--font-size-content);
+        font-family: var(--font-secondary);
+        margin: 0;
+    }
+    p {
+        font-weight: 600;
+        font-size: var(--font-size-h4);
+        margin: 0;
+
+        span {
+            font-weight: 100;
+        }
+    }
+
+    a {
+        background-color: var(--color-primary);
+        padding: 8px 16px;
+        border-radius: 100px;
+        color: var(--color-black);
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 }
 
+p.tag {
+    font-weight: 100;
+    font-size: var(--font-size-content);
+}
 .card__media {
     aspect-ratio: 595/490;
     img {
