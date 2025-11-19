@@ -1,0 +1,35 @@
+.pagination {
+    background-color: var(--color-primary);
+    padding: 80px 0;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            padding-top: 100px;
+            .card__content {
+                order: 1;
+            }
+        }
+    }
+    .btn2 {
+        background-color: var(--color-white);
+    }
+}
+
+.swiper-page {
+    .swiper-slide {
+        background: none;
+        min-height: unset;
+    }
+
+    .swiper-pagination {
+        position: static;
+
+        --swiper-pagination-bullet-width: 10px;
+        --swiper-pagination-bullet-height: 10px;
+
+        --swiper-pagination-color: var(--color-primary);
+        --swiper-pagination-bullet-inactive-color: var(--color-primary);
+
+        --swiper-pagination-bullet-border-radius: 0;
+    }
+}
